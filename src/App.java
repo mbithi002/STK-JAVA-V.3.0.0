@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class App {
 
     private static User user1 = new User(0, 0, 100000, 0, 0);
@@ -251,4 +250,5 @@ public class App {
         }
         scanner.close();
     }
+
 }
