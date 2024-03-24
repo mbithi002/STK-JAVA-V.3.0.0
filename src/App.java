@@ -224,11 +224,11 @@ public class App {
             int newPin = scanner.nextInt();
             mpesaPin = newPin;
             System.out.println("Success! PIN Changed\n");
-            restart();
         } else {
             System.out.println("Icorrect PIN ! PLease try Again");
             changePin();
         }
+        restart();
         scanner.close();
     }
 
