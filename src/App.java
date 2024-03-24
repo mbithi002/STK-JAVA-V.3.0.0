@@ -11,7 +11,6 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         userSetting();
-        // restart();
     }
 
     public static void userSetting() {
@@ -221,11 +220,11 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         int inputPin = scanner.nextInt();
         if (inputPin == mpesaPin) {
-            mpesaPin = inputPin;
-            System.out.println("Succeess! \nEnter Your New PIN: ");
-            int newMpesaPin = scanner.nextInt();
-            user1.set_mpesaPin(newMpesaPin);
-            System.out.println("Success! PIN changed");
+            // success
+            System.out.println("Enter New  PIN: ");
+            int newPin = scanner.nextInt();
+            mpesaPin = newPin;
+            System.out.println("Success! PIN Changed\n");
             restart();
         } else {
             System.out.println("Icorrect PIN ! PLease try Again");
